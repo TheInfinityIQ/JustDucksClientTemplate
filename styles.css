@@ -1,75 +1,100 @@
-body {
-    background-color: #FAFAFA;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
 header {
-    background-color: #2E2E2E;
-    color: #FAFAFA;
-    padding: 20px 0;
+	background-color: #2e2e2e;
+	color: #fafafa;
+	padding: 20px 0;
+	width: 100%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
-    padding: 0 20px;
     align-items: center;
+    padding: 0 35px;
 }
 
 nav ul {
-    list-style-type: none;
-    text-align: center;
-    display: flex;
+	list-style-type: none;
+	text-align: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+	display: inline;
+	margin: 0 15px;
 }
 
 nav ul li a {
-    color: #A6DCEF;
-    text-decoration: none;
+	color: #a6dcef;
+	text-decoration: none;
 }
 
 .website-name {
-    color: #A6DCEF;
-    font-family: 'Playfair Display', serif;
-    font-size: 48px;
-    text-align: center;
+	color: #FFD700;
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	text-align: center;
+}
+
+main {
+    display: flex;
+}
+
+.products {
+    width: 80%;
+    display: flex;
 }
 
 .product-card {
-    width: 300px;
-    padding: 20px;
-    background-color: #FAFAFA;
-    margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+	width: 300px;
+	padding: 20px;
+	background-color: #fafafa;
+	margin: 20px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+    height: 500px;
 }
 
 .product-card img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	aspect-ratio: 1 / 1;
 }
 
-.product-card h2 {
-    color: #2E2E2E;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+.product-card h2, figcaption {
+	color: #2e2e2e;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
 }
 
 .product-card p {
-    color: #2E2E2E;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 16px;
+	color: #2e2e2e;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
 }
 
 .product-card button {
-    background-color: #FFD700;
-    color: #2E2E2E;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
+	background-color: #FFD700 ;
+	color: #2e2e2e;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+.sidebar {
+	width: 20%;
+	padding: 20px;
+	background-color: #fafafa;
+	box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.1);
+	height: 100vh;
+	position: sticky;
+	top: 0;
+}
+
+.sidebar h2 {
+	color: #2e2e2e;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+.cart-items {
+	list-style-type: none;
 }
